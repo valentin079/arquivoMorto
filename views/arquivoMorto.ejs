@@ -1,0 +1,41 @@
+<%- include ('partials/header.ejs') %>
+    <body>
+        <%- include ('partials/navbar.ejs') %>
+        <hr>
+    
+        <table border="3">
+            <thead>
+                <tr>
+                    <td>
+                        <select name="select">
+                            <option value = "valor1" selected>ALUNO</option>
+                            <option value = "valor2">PROFESSOR</option>
+                            <option value = "valor3">PASTA ANTIGA</option>
+                        </select>
+                    </td>
+                    <td>CPF</td>
+                    <td>Nº PASTA</td>
+                    <td>REMOVER</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Emerson Valentin Oliveira</td>
+                    <td>076.963.175-47</td>
+                    <td>100</td>
+                    <td><%- include ('partials/excluir.ejs') %></td>
+                </tr>
+                <tr>
+                    <td>Jackson dos Reis</td>
+                    <td>556.975.476-88</td>
+                    <td>55</td>
+                    <td><%- include ('partials/excluir.ejs') %></td>
+                    
+                </tr>
+                
+
+            </tbody>
+        </table>
+
+    </body>
+<%- include ('partials/footer.ejs') %>

@@ -1,0 +1,40 @@
+<%- include ('partials/header.ejs') %>
+    <body>
+        <%- include ('partials/navbar.ejs') %>
+        <hr>
+        <div class="container">
+            <h2>Cadastrar</h2>
+            <select id="tipoArquivo" name="select" >
+                <option value = "valor1" selected>EX ALUNO</option>
+                <option value = "valor2">EX PROFESSOR</option>
+                <option value = "valor3">PASTA ANTIGA</option>
+            </select>
+            <input type="hidden" id="value">
+            
+           
+            <hr>
+            
+            <form method="POST" action="/cadastrar">
+                <% if(value = "valor1" || "valor2"){ %>
+                    <label>Nome do ex aluno/ professor:</label>
+                    <input placeholder="Nome" class="form-control" name="nome"></input><br>
+                    <label>CPF:</label>
+                    <input placeholder="Digite o CPF" class="form-control" name="cpf"></input><br>
+                <% }else{ %>
+                    <label>Resposta:</label>
+                    <input placeholder="Nome" class="form-control" name="nome"></input><br>
+                <% } %>
+                
+
+                <button type="submit" class="btn btn-dark">Cadastrar</button>
+            </form>
+            <hr>
+            
+        </div>
+
+        </div>
+        
+            
+        
+    </body>
+<%- include ('partials/footer.ejs') %>

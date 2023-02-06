@@ -1,0 +1,56 @@
+
+#formulario-pergunta{
+    margin-top: 5vh;
+}
+#img-logo{
+    height: 100px;
+    width: 140px;
+}
+td{
+    padding: 7px;
+    border: solid 2px black;
+}
+table{
+    border-style:inset;
+    font-size: 20px;
+}
+thead{
+    background-color: gray;
+}
+#btnBusca{
+    width: 30px;
+    height: 30px;
+    float:right;
+    cursor:pointer;
+    
+}
+#txtBusca{
+    float:left;
+    background-color:white;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:350px;
+  }
+  
+  
+#divBusca{
+    border:solid 6px white;
+    border-radius:10px;
+    background-color: white;
+    height:50px;
+    width:400px;
+}
+#cadastrar{
+    color: black;
+    font-size: 20px;
+}
+#lixeira{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.container{
+    font-size: 20px;
+}
